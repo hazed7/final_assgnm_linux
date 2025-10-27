@@ -130,7 +130,7 @@ function mark(ok) {
 function fillScoreTable() {
 	const rows = [
 		{ name:"Имитируется утечка памяти", pts:5, ok:true },
-		{ name:"Автоматический опрос (5 мин)", pts:5, ok:true },
+		{ name:"Автоматический опрос", pts:5, ok:true },
 		{ name:"Память", pts:5, ok:true },
 		{ name:"Загрузка CPU", pts:5, ok:true },
 		{ name:"Использование swap", pts:5, ok:true },
