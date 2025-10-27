@@ -148,7 +148,9 @@ function fillScoreTable() {
 	let sum = 0
 	rows.forEach(r => {
 		const tr = document.createElement("tr")
-		tr.innerHTML = `<td>${r.name}</td><td>${r.pts}</td><td>${mark(r.ok)}</td>`
+		const statusHtml = mark(r.ok)
+		tr.innerHTML = `<td>${r.name}</td><td>${r.pts}</td><td>${statusHtml}</td>`
+		if (r.name === "Анализ событий ядра / OOM" && !r.ok) tr.classList.add("neg-row")
 		body.appendChild(tr)
 		if (r.ok) sum += r.pts
 	})
