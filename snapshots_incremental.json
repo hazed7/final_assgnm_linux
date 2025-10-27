@@ -1,0 +1,295 @@
+[
+  {
+    "iteration": 1,
+    "timestamp": "2025-10-27T22:00:52.926729215+03:00",
+    "metrics": {
+      "timestamp": "2025-10-27T22:00:52.926728674+03:00",
+      "memory": {
+        "total_kb": 16175288,
+        "available_kb": 14287228,
+        "used_kb": 1888060,
+        "used_percent": 11.672496959559545,
+        "free_kb": 13917124,
+        "buffers_kb": 46012,
+        "cached_kb": 502672
+      },
+      "cpu": {
+        "user_time": 119645,
+        "system_time": 1794,
+        "idle_time": 987979,
+        "iowait_time": 112,
+        "total_time": 1109814,
+        "cpu_usage_percent": 0.0
+      },
+      "swap": {
+        "total_kb": 4194304,
+        "used_kb": 0,
+        "free_kb": 4194304,
+        "used_percent": 0.0
+      },
+      "load": {
+        "load_average_1min": 0.19,
+        "load_average_5min": 1.36,
+        "load_average_15min": 0.89,
+        "cpu_count": 16,
+        "load_percent_1min": 1.1875
+      },
+      "critical_events": []
+    }
+  },
+  {
+    "iteration": 2,
+    "timestamp": "2025-10-27T22:01:07.930074122+03:00",
+    "metrics": {
+      "timestamp": "2025-10-27T22:01:07.930073692+03:00",
+      "memory": {
+        "total_kb": 16175288,
+        "available_kb": 11722468,
+        "used_kb": 4452820,
+        "used_percent": 27.528536122509845,
+        "free_kb": 11352272,
+        "buffers_kb": 46012,
+        "cached_kb": 502764
+      },
+      "cpu": {
+        "user_time": 137660,
+        "system_time": 2006,
+        "idle_time": 993756,
+        "iowait_time": 112,
+        "total_time": 1133821,
+        "cpu_usage_percent": 75.92368892406381
+      },
+      "swap": {
+        "total_kb": 4194304,
+        "used_kb": 0,
+        "free_kb": 4194304,
+        "used_percent": 0.0
+      },
+      "load": {
+        "load_average_1min": 2.81,
+        "load_average_5min": 1.88,
+        "load_average_15min": 1.07,
+        "cpu_count": 16,
+        "load_percent_1min": 17.5625
+      },
+      "critical_events": []
+    }
+  },
+  {
+    "iteration": 3,
+    "timestamp": "2025-10-27T22:01:22.933597438+03:00",
+    "metrics": {
+      "timestamp": "2025-10-27T22:01:22.933597007+03:00",
+      "memory": {
+        "total_kb": 16175288,
+        "available_kb": 7874932,
+        "used_kb": 8300356,
+        "used_percent": 51.31504304591053,
+        "free_kb": 7504736,
+        "buffers_kb": 46012,
+        "cached_kb": 502768
+      },
+      "cpu": {
+        "user_time": 155684,
+        "system_time": 2332,
+        "idle_time": 999409,
+        "iowait_time": 112,
+        "total_time": 1157827,
+        "cpu_usage_percent": 76.43922352745147
+      },
+      "swap": {
+        "total_kb": 4194304,
+        "used_kb": 0,
+        "free_kb": 4194304,
+        "used_percent": 0.0
+      },
+      "load": {
+        "load_average_1min": 4.91,
+        "load_average_5min": 2.39,
+        "load_average_15min": 1.25,
+        "cpu_count": 16,
+        "load_percent_1min": 30.6875
+      },
+      "critical_events": []
+    }
+  },
+  {
+    "iteration": 4,
+    "timestamp": "2025-10-27T22:01:37.937394076+03:00",
+    "metrics": {
+      "timestamp": "2025-10-27T22:01:37.937393495+03:00",
+      "memory": {
+        "total_kb": 16175288,
+        "available_kb": 5309824,
+        "used_kb": 10865464,
+        "used_percent": 67.17323363886936,
+        "free_kb": 4939628,
+        "buffers_kb": 46012,
+        "cached_kb": 502768
+      },
+      "cpu": {
+        "user_time": 173700,
+        "system_time": 2544,
+        "idle_time": 1005184,
+        "iowait_time": 112,
+        "total_time": 1181832,
+        "cpu_usage_percent": 75.93418037908769
+      },
+      "swap": {
+        "total_kb": 4194304,
+        "used_kb": 0,
+        "free_kb": 4194304,
+        "used_percent": 0.0
+      },
+      "load": {
+        "load_average_1min": 6.48,
+        "load_average_5min": 2.86,
+        "load_average_15min": 1.42,
+        "cpu_count": 16,
+        "load_percent_1min": 40.5
+      },
+      "critical_events": []
+    }
+  },
+  {
+    "iteration": 5,
+    "timestamp": "2025-10-27T22:01:52.941229406+03:00",
+    "metrics": {
+      "timestamp": "2025-10-27T22:01:52.941228755+03:00",
+      "memory": {
+        "total_kb": 16175288,
+        "available_kb": 1966288,
+        "used_kb": 14209000,
+        "used_percent": 87.84387641196868,
+        "free_kb": 1596092,
+        "buffers_kb": 46012,
+        "cached_kb": 502768
+      },
+      "cpu": {
+        "user_time": 191716,
+        "system_time": 2838,
+        "idle_time": 1010863,
+        "iowait_time": 112,
+        "total_time": 1205826,
+        "cpu_usage_percent": 76.31074435275485
+      },
+      "swap": {
+        "total_kb": 4194304,
+        "used_kb": 0,
+        "free_kb": 4194304,
+        "used_percent": 0.0
+      },
+      "load": {
+        "load_average_1min": 7.77,
+        "load_average_5min": 3.33,
+        "load_average_15min": 1.6,
+        "cpu_count": 16,
+        "load_percent_1min": 48.5625
+      },
+      "critical_events": [
+        {
+          "event_type": "MEMORY_CRITICAL",
+          "severity": "CRITICAL",
+          "description": "Memory usage at 87.8%",
+          "timestamp": "2025-10-27T22:01:52.941222032+03:00"
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 6,
+    "timestamp": "2025-10-27T22:02:07.954583500+03:00",
+    "metrics": {
+      "timestamp": "2025-10-27T22:02:07.954581166+03:00",
+      "memory": {
+        "total_kb": 16175288,
+        "available_kb": 24072,
+        "used_kb": 16151216,
+        "used_percent": 99.85118039320227,
+        "free_kb": 136636,
+        "buffers_kb": 724,
+        "cached_kb": 8336
+      },
+      "cpu": {
+        "user_time": 209718,
+        "system_time": 3601,
+        "idle_time": 1016039,
+        "iowait_time": 139,
+        "total_time": 1229841,
+        "cpu_usage_percent": 78.13866333541537
+      },
+      "swap": {
+        "total_kb": 4194304,
+        "used_kb": 1068628,
+        "free_kb": 3125676,
+        "used_percent": 25.478076934814453
+      },
+      "load": {
+        "load_average_1min": 8.86,
+        "load_average_5min": 3.78,
+        "load_average_15min": 1.77,
+        "cpu_count": 16,
+        "load_percent_1min": 55.375
+      },
+      "critical_events": [
+        {
+          "event_type": "MEMORY_CRITICAL",
+          "severity": "CRITICAL",
+          "description": "Memory usage at 99.9%",
+          "timestamp": "2025-10-27T22:02:07.954418390+03:00"
+        }
+      ]
+    }
+  },
+  {
+    "iteration": 7,
+    "timestamp": "2025-10-27T22:02:22.957998101+03:00",
+    "metrics": {
+      "timestamp": "2025-10-27T22:02:22.957997610+03:00",
+      "memory": {
+        "total_kb": 16175288,
+        "available_kb": 49028,
+        "used_kb": 16126260,
+        "used_percent": 99.69689565960124,
+        "free_kb": 161612,
+        "buffers_kb": 724,
+        "cached_kb": 7664
+      },
+      "cpu": {
+        "user_time": 227710,
+        "system_time": 4286,
+        "idle_time": 1021247,
+        "iowait_time": 186,
+        "total_time": 1253916,
+        "cpu_usage_percent": 77.57840083073728
+      },
+      "swap": {
+        "total_kb": 4194304,
+        "used_kb": 3699248,
+        "free_kb": 495056,
+        "used_percent": 88.19694519042969
+      },
+      "load": {
+        "load_average_1min": 9.71,
+        "load_average_5min": 4.22,
+        "load_average_15min": 1.95,
+        "cpu_count": 16,
+        "load_percent_1min": 60.68750000000001
+      },
+      "critical_events": [
+        {
+          "event_type": "MEMORY_CRITICAL",
+          "severity": "CRITICAL",
+          "description": "Memory usage at 99.7%",
+          "timestamp": "2025-10-27T22:02:22.957992841+03:00"
+        },
+        {
+          "event_type": "SWAP_CRITICAL",
+          "severity": "CRITICAL",
+          "description": "Swap usage at 88.2%",
+          "timestamp": "2025-10-27T22:02:22.957992841+03:00"
+        }
+      ]
+    }
+  }
+]
