@@ -337,11 +337,3 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init)
-document.addEventListener("DOMContentLoaded", () => {
-	const btn = document.getElementById("btn-json");
-	if (btn) {
-		btn.addEventListener("click", () => {
-			window.open("https://github.com/hazed7/final_assgnm_linux/blob/main/snapshots_incremental.json", "_blank");
-		});
-	}
-});
