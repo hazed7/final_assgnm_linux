@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Итоговое задание ОС Linux</title>
+	<link rel="stylesheet" href="styles.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js" defer crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-rust.min.js" defer crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js" defer crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="report.js" defer></script>
+
+	<script id="embedded-json" type="application/json">
+	[
+		{"iteration":1,"timestamp":"2025-10-27T22:00:52.926729215+03:00","metrics":{"timestamp":"2025-10-27T22:00:52.926728674+03:00","memory":{"total_kb":16175288,"available_kb":14287228,"used_kb":1888060,"used_percent":11.672496959559545,"free_kb":13917124,"buffers_kb":46012,"cached_kb":502672},"cpu":{"user_time":119645,"system_time":1794,"idle_time":987979,"iowait_time":112,"total_time":1109814,"cpu_usage_percent":0},"swap":{"total_kb":4194304,"used_kb":0,"free_kb":4194304,"used_percent":0},"load":{"load_average_1min":0.19,"load_average_5min":1.36,"load_average_15min":0.89,"cpu_count":16,"load_percent_1min":1.1875},"critical_events":[]}},
+		{"iteration":2,"timestamp":"2025-10-27T22:01:07.930074122+03:00","metrics":{"timestamp":"2025-10-27T22:01:07.930073692+03:00","memory":{"total_kb":16175288,"available_kb":11722468,"used_kb":4452820,"used_percent":27.528536122509845,"free_kb":11352272,"buffers_kb":46012,"cached_kb":502764},"cpu":{"user_time":137660,"system_time":2006,"idle_time":993756,"iowait_time":112,"total_time":1133821,"cpu_usage_percent":75.92368892406381},"swap":{"total_kb":4194304,"used_kb":0,"free_kb":4194304,"used_percent":0},"load":{"load_average_1min":2.81,"load_average_5min":1.88,"load_average_15min":1.07,"cpu_count":16,"load_percent_1min":17.5625},"critical_events":[]}},
+		{"iteration":3,"timestamp":"2025-10-27T22:01:22.933597438+03:00","metrics":{"timestamp":"2025-10-27T22:01:22.933597007+03:00","memory":{"total_kb":16175288,"available_kb":7874932,"used_kb":8300356,"used_percent":51.31504304591053,"free_kb":7504736,"buffers_kb":46012,"cached_kb":502768},"cpu":{"user_time":155684,"system_time":2332,"idle_time":999409,"iowait_time":112,"total_time":1157827,"cpu_usage_percent":76.43922352745147},"swap":{"total_kb":4194304,"used_kb":0,"free_kb":4194304,"used_percent":0},"load":{"load_average_1min":4.91,"load_average_5min":2.39,"load_average_15min":1.25,"cpu_count":16,"load_percent_1min":30.6875},"critical_events":[]}},
+		{"iteration":4,"timestamp":"2025-10-27T22:01:37.937394076+03:00","metrics":{"timestamp":"2025-10-27T22:01:37.937393495+03:00","memory":{"total_kb":16175288,"available_kb":5309824,"used_kb":10865464,"used_percent":67.17323363886936,"free_kb":4939628,"buffers_kb":46012,"cached_kb":502768},"cpu":{"user_time":173700,"system_time":2544,"idle_time":1005184,"iowait_time":112,"total_time":1181832,"cpu_usage_percent":75.93418037908769},"swap":{"total_kb":4194304,"used_kb":0,"free_kb":4194304,"used_percent":0},"load":{"load_average_1min":6.48,"load_average_5min":2.86,"load_average_15min":1.42,"cpu_count":16,"load_percent_1min":40.5},"critical_events":[]}},
+		{"iteration":5,"timestamp":"2025-10-27T22:01:52.941229406+03:00","metrics":{"timestamp":"2025-10-27T22:01:52.941228755+03:00","memory":{"total_kb":16175288,"available_kb":1966288,"used_kb":14209000,"used_percent":87.84387641196868,"free_kb":1596092,"buffers_kb":46012,"cached_kb":502768},"cpu":{"user_time":191716,"system_time":2838,"idle_time":1010863,"iowait_time":112,"total_time":1205826,"cpu_usage_percent":76.31074435275485},"swap":{"total_kb":4194304,"used_kb":0,"free_kb":4194304,"used_percent":0},"load":{"load_average_1min":7.77,"load_average_5min":3.33,"load_average_15min":1.6,"cpu_count":16,"load_percent_1min":48.5625},"critical_events":[{"event_type":"MEMORY_CRITICAL","severity":"CRITICAL","description":"Memory usage at 87.8%","timestamp":"2025-10-27T22:01:52.941222032+03:00"}]}},
+		{"iteration":6,"timestamp":"2025-10-27T22:02:07.954583500+03:00","metrics":{"timestamp":"2025-10-27T22:02:07.954581166+03:00","memory":{"total_kb":16175288,"available_kb":24072,"used_kb":16151216,"used_percent":99.85118039320227,"free_kb":136636,"buffers_kb":724,"cached_kb":8336},"cpu":{"user_time":209718,"system_time":3601,"idle_time":1016039,"iowait_time":139,"total_time":1229841,"cpu_usage_percent":78.13866333541537},"swap":{"total_kb":4194304,"used_kb":1068628,"free_kb":3125676,"used_percent":25.478076934814453},"load":{"load_average_1min":8.86,"load_average_5min":3.78,"load_average_15min":1.77,"cpu_count":16,"load_percent_1min":55.375},"critical_events":[{"event_type":"MEMORY_CRITICAL","severity":"CRITICAL","description":"Memory usage at 99.9%","timestamp":"2025-10-27T22:02:07.954418390+03:00"}]}},
+		{"iteration":7,"timestamp":"2025-10-27T22:02:22.957998101+03:00","metrics":{"timestamp":"2025-10-27T22:02:22.957997610+03:00","memory":{"total_kb":16175288,"available_kb":49028,"used_kb":16126260,"used_percent":99.69689565960124,"free_kb":161612,"buffers_kb":724,"cached_kb":7664},"cpu":{"user_time":227710,"system_time":4286,"idle_time":1021247,"iowait_time":186,"total_time":1253916,"cpu_usage_percent":77.57840083073728},"swap":{"total_kb":4194304,"used_kb":3699248,"free_kb":495056,"used_percent":88.19694519042969},"load":{"load_average_1min":9.71,"load_average_5min":4.22,"load_average_15min":1.95,"cpu_count":16,"load_percent_1min":60.6875},"critical_events":[{"event_type":"MEMORY_CRITICAL","severity":"CRITICAL","description":"Memory usage at 99.7%","timestamp":"2025-10-27T22:02:22.957992841+03:00"},{"event_type":"SWAP_CRITICAL","severity":"CRITICAL","description":"Swap usage at 88.2%","timestamp":"2025-10-27T22:02:22.957992841+03:00"}]}}
+	]
+	</script>
+</head>
+<body>
+	<header class="topbar">
+		<h1>Итоговое задание ОС Linux</h1>
+		<div class="topbar-right">
+			<span class="author">Выполнил: Костин Александр</span>
+			<a class="gh" href="https://github.com/hazed7/final_assgnm_linux" target="_blank" aria-label="GitHub">
+				<svg width="28" height="28" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+					<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52 -.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82A7.62 7.62 0 0 1 8 3.47c.68.003 1.37.09 2.01.26 1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8 8 0 0 0 16 8 c0-4.42-3.58-8-8-8z"/>
+				</svg>
+			</a>
+		</div>
+	</header>
+
+	<section class="meta section">
+		<p class="sub">
+			<strong>Параметры запуска:</strong>
+			<code>-m 1250 -l 5 -c 12 -i 15</code>
+			<span class="tooltip" tabindex="0">
+				<ul>
+					<li><code>-m &lt;MB&gt;</code> — размер шага</li>
+					<li><code>-l &lt;sec&gt;</code> — интервал шага</li>
+					<li><code>-c &lt;n&gt;</code> — потоки CPU</li>
+					<li><code>-i &lt;sec&gt;</code> — интервал снапшотов</li>
+				</ul>
+			</span>
+		</p>
+
+        <p>
+            <button id="btn-json" class="btn">Открыть полный сгенерированный диагностический отчет</button>
+        </p>
+	</section>
+
+	<section class="section">
+		<h2>Карта соответствия критериям</h2>
+		<table id="score-tbl">
+			<thead>
+				<tr><th>Критерий</th><th>Баллы</th><th>Статус</th></tr>
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<tr><th>ИТОГО</th><th id="score-max">60</th><th id="score-sum">0</th></tr>
+			</tfoot>
+		</table>
+	</section>
+
+	<section class="section">
+		<h2>Память — 5 баллов</h2>
+		<div id="mem-badges" class="badges"></div>
+		<div id="mem-first" class="first"></div>
+		<table id="mem-tbl">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Время</th>
+					<th>Использование, %</th>
+					<th>Использовано / Доступно (MB)</th>
+					<th>Всего (MB)</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<tr>
+					<th>Итого</th>
+					<th>—</th>
+					<th id="mem-agg-pct">—</th>
+					<th id="mem-agg-used-avail">—</th>
+					<th id="mem-agg-total">—</th>
+				</tr>
+			</tfoot>
+		</table>
+		<details>
+			<summary>Код (monitor.rs)</summary>
+			<pre class="line-numbers"><code class="language-rust" id="code-monitor-mem"></code></pre>
+		</details>
+	</section>
+
+	<section class="section">
+		<h2>Загрузка CPU — 5 баллов</h2>
+		<div id="cpu-badges" class="badges"></div>
+		<div id="cpu-first" class="first"></div>
+		<table id="cpu-tbl">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Время</th>
+					<th>CPU, %</th>
+					<th>Load 1 / 5 / 15</th>
+					<th>Нагрузка от 1-мин, % ядер</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<tr>
+					<th>Итого</th>
+					<th>—</th>
+					<th id="cpu-agg-pct">—</th>
+					<th id="cpu-agg-load">—</th>
+					<th id="cpu-agg-loadpct">—</th>
+				</tr>
+			</tfoot>
+		</table>
+		<details>
+			<summary>Код (monitor.rs)</summary>
+			<pre class="line-numbers"><code class="language-rust" id="code-monitor-cpu"></code></pre>
+		</details>
+	</section>
+
+	<section class="section">
+		<h2>Использование swap — 5 баллов</h2>
+		<div id="swap-badges" class="badges"></div>
+		<div id="swap-first" class="first"></div>
+		<table id="swap-tbl">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Время</th>
+					<th>Swap, %</th>
+					<th>Использовано / Всего (MB)</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<tr>
+					<th>Итого</th>
+					<th>—</th>
+					<th id="swap-agg-pct">—</th>
+					<th id="swap-agg-used-total">—</th>
+				</tr>
+			</tfoot>
+		</table>
+		<details>
+			<summary>Код (monitor.rs)</summary>
+			<pre class="line-numbers"><code class="language-rust" id="code-monitor-swap"></code></pre>
+		</details>
+	</section>
+
+	<section class="section">
+		<h2>Критические события — 5 баллов</h2>
+		<div id="ev-badges" class="badges"></div>
+		<div id="ev-first" class="first"></div>
+		<table id="events-tbl">
+			<thead>
+				<tr>
+					<th># снапшота</th>
+					<th>Время</th>
+					<th>Событие</th>
+					<th>Уровень</th>
+					<th>Описание</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<tr>
+					<th colspan="2">Суммарно</th>
+					<th id="events-agg-types" colspan="3">—</th>
+				</tr>
+			</tfoot>
+		</table>
+		<details>
+			<summary>Код (report.rs)</summary>
+			<pre class="line-numbers"><code class="language-rust" id="code-report"></code></pre>
+		</details>
+		<details>
+			<summary>Код (memory_leak.rs)</summary>
+			<pre class="line-numbers"><code class="language-rust" id="code-leak"></code></pre>
+		</details>
+	</section>
+
+    <div id="json-modal" class="modal" hidden>
+        <div class="modal-box">
+            <div class="modal-head">
+                <span>Полный отчёт: snapshots_incremental.json</span>
+                <button id="json-close" class="btn btn-light">Закрыть</button>
+            </div>
+            <pre class="modal-pre"><code id="json-pre" class="language-json"></code></pre>
+        </div>
+    </div>
+</body>
+</html>
