@@ -1,0 +1,121 @@
+body {
+	font-family: 'Courier New', monospace;
+	background: #000;
+	color: #fff;
+	margin: 0;
+	padding: 40px;
+	line-height: 1.6;
+}
+h1, h2, h3 {
+	border-bottom: 2px solid #fff;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.section { margin-bottom: 40px; }
+.sub { color: #bbb; }
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+}
+th, td {
+	border: 1px solid #fff;
+	padding: 8px;
+	text-align: left;
+	vertical-align: top;
+}
+th { background: #111; }
+details {
+	margin-bottom: 20px;
+	border: 1px solid #333;
+}
+summary {
+	padding: 10px;
+	background: #111;
+	cursor: pointer;
+}
+pre {
+	background: #111;
+	padding: 10px;
+	overflow-x: auto;
+	border-left: 4px solid #fff;
+	margin: 0;
+}
+.mono { font-family: inherit; white-space: nowrap; }
+.topbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+}
+.topbar-right { display: flex; align-items: center; gap: 16px; }
+.author { border: 1px solid #fff; padding: 4px 8px; background: #111; }
+.gh { color: #fff; display: inline-flex; align-items: center; }
+.gh:hover { color: #0f0; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 12px; }
+.badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border: 1px solid #fff;
+	background: #111;
+}
+.ok { color: #7CFC00; }
+.warn { color: #FFD700; }
+.crit { color: #FF5555; }
+.first { color: #bbb; margin-bottom: 10px; }
+:not(pre) > code {
+	background: #111;
+	color: #0f0;
+	border: 1px solid #0f0;
+	padding: 2px 6px;
+	border-radius: 4px;
+	font-family: 'Courier New', monospace;
+	white-space: nowrap;
+}
+pre > code { background: transparent; color: inherit; border: 0; padding: 0; }
+pre[class*="language-"], code[class*="language-"] {
+	font-family: "Cascadia Mono","JetBrains Mono","Fira Code","Consolas","Liberation Mono",monospace;
+	font-size: 15px;
+	line-height: 1.4;
+	color: #e6e6e6;
+	text-shadow: none !important;
+	-webkit-font-smoothing: auto !important;
+	-moz-osx-font-smoothing: auto !important;
+	font-variant-ligatures: none;
+	tab-size: 4;
+}
+details > pre { margin-top: 10px; }
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	background: #111;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+	background: #222;
+	transform: translateY(-1px);
+}
+
+.btn:active {
+	transform: translateY(0);
+}
+
+.btn-accent {
+	border-color: #0af;
+	color: #0af;
+	font-weight: 600;
+	background: #0b0b0b;
+}
+
+.btn-accent:hover {
+	background: #0af;
+	color: #000;
+}
