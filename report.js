@@ -137,10 +137,10 @@ function fillScoreTable() {
 		{ name:"Критические события", pts:5, ok:true },
 		{ name:"Анализ событий ядра / OOM", pts:5, ok:false },
 		{ name:"Генерация отчёта", pts:5, ok:true },
-		{ name:"Память (таблица)", pts:5, ok:true },
-		{ name:"Загрузка CPU (таблица)", pts:5, ok:true },
-		{ name:"Использование swap (таблица)", pts:5, ok:true },
-		{ name:"Критические события (таблица)", pts:5, ok:true }
+		{ name:"Память", pts:5, ok:true },
+		{ name:"Загрузка CPU", pts:5, ok:true },
+		{ name:"Использование swap", pts:5, ok:true },
+		{ name:"Критические события", pts:5, ok:true }
 	]
 	const body = document.querySelector("#score-tbl tbody")
 	if (!body) return
